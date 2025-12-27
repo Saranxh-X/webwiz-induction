@@ -1,0 +1,46 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.582);
+  border-top: 5px solid aqua;
+  border-bottom: 5px solid aqua;
+ 
+}
+.todo{
+
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgb(194, 216, 245);
+}
+.task{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  flex-grow: 1;
+  font-family: 'Times New Roman', Times, serif;
+}
+.todo:has(.checkbox:checked){
+  background-color: rgb(151, 188, 240);
+  color: rgb(255, 255, 255);
+  text-decoration: line-through;
+  order: 1;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center; 
+  min-height: 100vh;
+  background: var(--bg-gradient);
+}
+.heading{
+  color: aqua;
+
+}
+:root {
+    --bg-gradient: linear-gradient(135deg, #214c9c 0%, #637da8 100%);
+    --card-bg: rgba(255, 255, 255, 0.15);
+}
